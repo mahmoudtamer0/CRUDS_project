@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/normaliz.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="head">
+                <h1>CRUDS</h1>
+                <h2>Mahmoud's Cruds Project</h2>
+                <p>For Products Management</p>
+            </div>
+            <div class="inputs">
+                <input type="text" id="title" placeholder="title">
+                <div class="pri">
+                    <input onkeyup="getTotal()" type="number" id="price" placeholder="Price" required>
+                    <input onkeyup="getTotal()" type="number" id="ads" placeholder="Ads">
+                    <input onkeyup="getTotal()" type="number" id="tax" placeholder="Tax">
+                    <input onkeyup="getTotal()" type="number" id="disc" placeholder="Discounte">
+                    <span id="total"> </span>
+                </div>
+                <input type="number" id="count" placeholder="count">
+                <input type="category" id="categ" placeholder="category">
+                <button onclick="creatproduct()" id="creat">Creat</button>
+            </div>
+            <div class="search-sec">
+                <input onkeyup="searchData(value)" type="search" placeholder="Search" id="search">
+                <div class="search-buts">
+                    <button onclick="searchMode(this.id)" id="bytitle"> Search by Title</button>
+                    <button onclick="searchMode(this.id)" id="bycateg"> Search by Category</button>
+                </div>
+
+            </div>
+            <div id="delet"></div>
+            <table>
+                <tr>
+                    <th>Id</th>
+                    <th>Title</th>
+                    <th class="td-del">Price</th>
+                    <th class="td-del">Ads</th>
+                    <th class="td-del">Tax</th>
+                    <th class="td-del">Discount</th>
+                    <th>Total Price</th>
+                    <th>Category</th>
+                    <th>Delete</th>
+                    <th>Update</th>
+                </tr>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+        <script src="js/popper.min.js"></script>
+        <script src="js/jquery-3.6.4.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/test.js"></script>
+    </body>
+
+</html>
