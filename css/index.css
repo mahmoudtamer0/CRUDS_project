@@ -68,7 +68,7 @@ input {
     width: 100%;
 }
 
-span {
+.pri span {
     background-color: #c52222;
     padding: 6px;
     border-radius: 6px;
@@ -80,7 +80,7 @@ span {
     margin-bottom: 10px;
 }
 
-span::before {
+.pri span::before {
     content: "Total: ";
 }
 
@@ -213,4 +213,21 @@ button :hover {
 #bycateg:hover {
     background-color: #a146bd;
     letter-spacing: 0.02cm;
+}
+
+.foot {
+    text-align: center;
+    padding: 30px 0 25px;
+    border-top: 1px solid #5c5c5c;
+}
+
+.foot h3 {
+    color: white;
+    font-size: 15px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.foot h3 span {
+    color: #af5fff;
 }
