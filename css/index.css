@@ -86,8 +86,8 @@ input {
 
 .pri {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 9px;
+    grid-template-columns: repeat(auto-fill, minmax(227px, 1fr));
+    gap: 5px;
 }
 
 .pri input {
