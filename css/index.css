@@ -231,3 +231,18 @@ button :hover {
 .foot h3 span {
     color: #af5fff;
 }
+
+.btnmooddiv {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 18px;
+}
+
+#btnmood {
+    padding: 10px;
+    background-color: rebeccapurple;
+    color: white;
+    font-weight: bold;
+    border: navajowhite;
+    border-radius: 25px;
+}
