@@ -9,6 +9,31 @@ body {
     font-family: system-ui;
 }
 
+body.light {
+    background-color: white;
+}
+
+body.light .head h1 {
+    color: #242424;
+}
+
+body.light .head h2 {
+    color: #242424;
+}
+
+body.light input {
+    background-color: #dbdbdb;
+    color: #242424;
+}
+
+body.light table {
+    color: #242424;
+}
+
+body.light footer h3 {
+    color: #242424;
+}
+
 /* .container {
     width: 70%;
     margin: 20px auto;

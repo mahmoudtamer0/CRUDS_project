@@ -9,9 +9,10 @@ let categ = document.getElementById('categ');
 let creat = document.getElementById('creat');
 let mood = 'creat';
 let tmp;
-let search = document.getElementById('search')
-let bytitle = document.getElementById('bytitle')
-let bycateg = document.getElementById('bycateg')
+let search = document.getElementById('search');
+let bytitle = document.getElementById('bytitle');
+let bycateg = document.getElementById('bycateg');
+let btnmood = document.getElementById('btnmood');
 
 function getTotal() {
     if (price.value != "") {
@@ -192,56 +193,11 @@ function searchData(value) {
     }
     document.getElementById('tbody').innerHTML = table;
 }
+
 btnmood.onclick = function () {
-    if (statmood === 'dark') {
-        document.body.style.backgroundColor = '#242424';
-        document.getElementById('maintitle').style.color = '#ededed';
-        document.getElementById('paragtitle').style.color = '#ededed';
-        title.style.backgroundColor = '#121212';
-        price.style.backgroundColor = '#121212';
-        ads.style.backgroundColor = '#121212';
-        tax.style.backgroundColor = '#121212';
-        disc.style.backgroundColor = '#121212';
-        count.style.backgroundColor = '#121212';
-        categ.style.backgroundColor = '#121212';
-        search.style.backgroundColor = '#121212';
-        // colors
-        title.style.color = 'white';
-        price.style.color = 'white';
-        ads.style.color = 'white';
-        tax.style.color = 'white';
-        disc.style.color = 'white';
-        count.style.color = 'white';
-        categ.style.color = 'white';
-        search.style.color = 'white';
-        // table 
-        document.querySelector('table').style.color = 'white';
-        btnmood.innerHTML = 'Light Mood'
-        statmood = 'light';
+    if (document.body.className == 'light') {
+        document.body.classList.remove('light');
     } else {
-        document.body.style.backgroundColor = '#ededed';
-        document.getElementById('maintitle').style.color = '#242424';
-        document.getElementById('paragtitle').style.color = '#242424';
-        title.style.backgroundColor = '#c9c9c9';
-        price.style.backgroundColor = '#c9c9c9';
-        ads.style.backgroundColor = '#c9c9c9';
-        tax.style.backgroundColor = '#c9c9c9';
-        disc.style.backgroundColor = '#c9c9c9';
-        count.style.backgroundColor = '#c9c9c9';
-        categ.style.backgroundColor = '#c9c9c9';
-        search.style.backgroundColor = '#c9c9c9';
-        // colors
-        title.style.color = '#121212';
-        price.style.color = '#121212';
-        ads.style.color = '#121212';
-        tax.style.color = '#121212';
-        disc.style.color = '#121212';
-        count.style.color = '#121212';
-        categ.style.color = '#121212';
-        search.style.color = '#121212';
-        // table colors
-        document.querySelector('table').style.color = 'black';
-        btnmood.innerHTML = 'Dark Mood'
-        statmood = 'dark';
-    };
-};
+        document.body.classList.add('light')
+    }
+}
