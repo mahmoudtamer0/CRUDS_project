@@ -197,7 +197,9 @@ function searchData(value) {
 btnmood.onclick = function () {
     if (document.body.className == 'light') {
         document.body.classList.remove('light');
+        btnmood.innerHTML = 'Light Mood'
     } else {
         document.body.classList.add('light')
+        btnmood.innerHTML = 'Dark Mood'
     }
 }
